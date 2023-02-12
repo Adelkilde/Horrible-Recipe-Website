@@ -79,7 +79,7 @@ body {
     width: 60%;
   }
   
-  li::before {
+  ol>li::before {
     content: counter(step-counter);
     counter-increment: step-counter;
     width: 50px;
@@ -93,4 +93,19 @@ body {
     margin-right: 20px;
     display: inline-block;
   }
+  
+  ul>li::before {
+    content:'○' ;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #777777;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
   
